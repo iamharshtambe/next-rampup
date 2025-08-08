@@ -13,7 +13,7 @@ export default function Post() {
         <Link href="/posts/1" replace>
           <p>Post 1</p>
         </Link>
-        <Link href="/posts/1">
+        <Link href="/posts/2">
           <p>Post 2</p>
         </Link>
       </div>

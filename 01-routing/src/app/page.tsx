@@ -22,6 +22,10 @@ export default function Home() {
       <Link href="/products">
         <h2 className="font-bold text-2xl text-center">Products</h2>
       </Link>
+
+      <Link href="/articles/breaking-news-123?lang=en">
+        <h2 className="font-bold text-2xl text-center">Articles</h2>
+      </Link>
     </div>
   );
 }
