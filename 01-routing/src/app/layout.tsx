@@ -1,4 +1,5 @@
 import './globals.css';
+import { ErrorWrapper } from './error-wrapper';
 
 export const metadata = {
   title: 'Next.js',
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ErrorWrapper>{children}</ErrorWrapper>
+      </body>
     </html>
   );
 }
