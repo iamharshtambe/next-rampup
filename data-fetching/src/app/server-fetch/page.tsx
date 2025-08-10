@@ -27,7 +27,7 @@ export default async function ServerFetch() {
 
       <div className="max-w-7xl mx-auto">
         {quotes?.quotes?.map((quote) => (
-          <div className="w-full border p-2 m-2 rounded-2xl">
+          <div key={quote.id} className="w-full border p-2 m-2 rounded-2xl">
             <p className="font-semibold ">"{quote.quote}"</p>
             <p>- {quote.author}</p>
           </div>
