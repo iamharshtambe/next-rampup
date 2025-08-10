@@ -39,6 +39,11 @@ Welcome to my Next.js learning journey! This repository contains code examples a
 - **Metadata** - Setting static metadata for pages
 - **generateMetadata** - Dynamic metadata generation based on page content
 
+### Data Fetching
+
+- **Data Fetching in Server Component** - Fetching quotes data inside server component
+- **SWR & TanStack Query** - Fetching quotes data inside client component using SWR and TanStack Query
+
 ## 🚀 Getting Started
 
 1. **Clone the repository**
