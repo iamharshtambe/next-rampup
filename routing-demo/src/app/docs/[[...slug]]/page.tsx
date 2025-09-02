@@ -1,22 +1,19 @@
-export default function Documentation({
+export default async function Documentation({
   params,
 }: {
-  params: { slug?: string[] };
+  params: Promise<{ slug: string[] }>;
 }) {
-  const slug = params.slug ?? [];
+  const { slug } = await params;
 
-  return (
-    <div>
-      <p>Documentation</p>
-      {slug?.length === 2 ? (
-        <p>
-          Viewing docs for feature {slug[0]} and concept {slug[1]}
-        </p>
-      ) : slug?.length === 1 ? (
-        <p>Viewing docs for feature {slug[0]}</p>
-      ) : (
-        <p>Welcome to the docs overview</p>
-      )}
-    </div>
-  );
+  if (slug?.length === 2) {
+    return (
+      <p>
+        Viewing feature {slug[0]} and concept {slug[1]}
+      </p>
+    );
+  } else if (slug?.length === 1) {
+    return <p>Viewing feature {slug[0]}</p>;
+  } else {
+    return <p>Documentation</p>;
+  }
 }
