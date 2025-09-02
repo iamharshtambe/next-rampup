@@ -1,9 +1,9 @@
-export default async function ReviewDetails({
+export default function ReviewDetails({
   params,
 }: {
-  params: Promise<{ productId: string; reviewId: string }>;
+  params: { productId: string; reviewId: string };
 }) {
-  const { productId, reviewId } = await params;
+  const { productId, reviewId } = params;
 
   return (
     <div>
