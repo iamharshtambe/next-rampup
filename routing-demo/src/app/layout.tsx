@@ -1,7 +1,12 @@
+import { Metadata } from 'next';
 import './globals.css';
 
-export const metadata = {
-  title: 'Routing Demo',
+export const metadata: Metadata = {
+  title: {
+    default: 'Routing Demo',
+    template: '%s | Routing Demo',
+    absolute: '',
+  },
   description: 'Routing concepts explained',
 };
 

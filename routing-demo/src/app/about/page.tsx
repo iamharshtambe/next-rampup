@@ -1,5 +1,9 @@
-export const metadata = {
-  title: 'About Us',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'About Us',
+  },
   description: 'This is About US page',
 };
 
