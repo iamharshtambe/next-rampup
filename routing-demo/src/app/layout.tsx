@@ -1,4 +1,4 @@
-export const metaData = {
+export const metadata = {
   title: 'Routing Demo',
   description: 'Routing concepts explained',
 };
