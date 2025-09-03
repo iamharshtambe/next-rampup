@@ -10,7 +10,11 @@ const navLinks = [
   { name: 'Forgot Password', href: '/forgot-password' },
 ];
 
-export default function RootLayout() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
 
   return (
@@ -19,7 +23,6 @@ export default function RootLayout() {
         const isActive =
           pathname === link.href ||
           (pathname.startsWith(link.href) && link.href !== '/');
-
         return (
           <Link
             href={link.href}
@@ -30,6 +33,8 @@ export default function RootLayout() {
           </Link>
         );
       })}
+
+      <span className="bg-amber-200 p-2 w-15">{children}</span>
     </div>
   );
 }
