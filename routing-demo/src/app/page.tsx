@@ -10,6 +10,10 @@ export default function Home() {
       <Link href="/docs">Documentation</Link>
       <Link href="/products">Products</Link>
       <Link href="/profile">Profile</Link>
+      <div className="flex items-center gap-6">
+        <Link href="/articles/breaking-news?lang=en">Read in English</Link>
+        <Link href="/articles/breaking-news?lang=fr">Read in French</Link>
+      </div>
     </div>
   );
 }
