@@ -1,3 +1,15 @@
+import Link from 'next/link';
+
 export default function Home() {
-  return <div>Welcome Home</div>;
+  return (
+    <div className="flex flex-col gap-2">
+      Welcome Home
+      <Link href="/about">About Us</Link>
+      <Link href="/blog">Blog</Link>
+      <Link href="/counter">Counter</Link>
+      <Link href="/docs">Documentation</Link>
+      <Link href="/products">Products</Link>
+      <Link href="/profile">Profile</Link>
+    </div>
+  );
 }
